@@ -1,0 +1,1 @@
+export const allNewsList = state => state.allNews.allNews

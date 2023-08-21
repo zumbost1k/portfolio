@@ -1,0 +1,25 @@
+.news_section {
+    padding-top: 40px;
+}
+
+.news_container {
+    display: flex;
+    gap: 10px;
+}
+
+.news_avatar {
+    border-radius: 50%;
+}
+
+.news_author_name_date {
+    font-weight: 600;
+    display: flex;
+    gap: 4px;
+}
+
+.news_date {
+    color: rgb(102, 99, 99);
+    font-weight: 500;
+}
+
+@media (min-width:724px) {}

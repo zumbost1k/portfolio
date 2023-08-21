@@ -1,0 +1,134 @@
+.header_info {
+    max-width: 724px;
+    position: relative;
+    width: 100%;
+}
+
+.info_about_myself {
+    margin-top: -40px;
+    margin: -40px 20px 0px 20px;
+}
+
+.follow_inst_btn {
+    display: flex;
+    gap: 5px;
+    background: rgb(189, 5, 5);
+    border-radius: 15px;
+    padding: 8px 12px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: .5px;
+}
+
+.follow_inst_btn:hover {
+    background: rgb(163, 6, 6);
+}
+
+.photos_container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.my_photo {
+    border-radius: 50%;
+    border: 4px solid black;
+}
+
+.my_name {
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.text_about_me {
+    padding-top: 4px;
+    font-size: 16px;
+}
+
+.info_with_icon_container {
+    padding-top: 5px;
+    margin-left: -3px;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.info_with_icon {
+    display: flex;
+    align-items: flex-end;
+    color: #494a4d;
+    font-weight: 500;
+    gap: 3px;
+    font-size: 16px;
+}
+
+.send_message_to_me {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact_me_here {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.send_message_form {
+    border-radius: 8px;
+    margin-top: 10px;
+    display: inline-flex;
+    background: white;
+    align-items: center;
+}
+
+.send_message_btn {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background: rgb(189, 5, 5);
+    padding: 12px 18px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: .5px;
+}
+
+.send_message_btn:hover {
+    background: rgb(163, 6, 6);
+}
+
+.send_message_input {
+    padding-left: 10px;
+    width: 200px;
+    font-size: 16px;
+}
+
+.send_message_input::placeholder {
+    color: rgb(151, 149, 149);
+}
+
+@media (min-width:724px) {
+    .send_message_input {
+        width: 250px;
+    }
+
+    .guitar_photo {
+        height: 241px;
+    }
+
+    .my_photo {
+        width: 115px;
+        height: 115px;
+    }
+
+    .follow_inst_btn {
+        margin-bottom: 20px;
+    }
+}
