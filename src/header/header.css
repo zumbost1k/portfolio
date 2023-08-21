@@ -39,6 +39,7 @@
 }
 
 .my_name {
+    letter-spacing: 0.3px;
     padding-top: 10px;
     font-size: 25px;
     font-weight: 900;

@@ -1,4 +1,5 @@
 .nav_links_container {
+    max-width: 724px;
     padding-top: 30px;
     display: flex;
     justify-content: space-between;
