@@ -8,6 +8,7 @@ import Header from './header/header';
 import ScrollToTop from './scroll_to_top';
 import Navigate from './navigate/navigate';
 import News from './news/news';
+import About from './about/about';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -20,6 +21,7 @@ root.render(
         <Navigate />
         <Routes>
           <Route path='/news' element={<News />} />
+          <Route path='/about' element={<About />} />
           <Route path='*' element={<News />} />
           <Route />
         </Routes>
