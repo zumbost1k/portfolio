@@ -9,6 +9,8 @@ import ScrollToTop from './scroll_to_top';
 import Navigate from './navigate/navigate';
 import News from './news/news';
 import About from './about/about';
+import Content from './content/contentBody';
+import Footer from './footer/footer';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -22,9 +24,11 @@ root.render(
         <Routes>
           <Route path='/news' element={<News />} />
           <Route path='/about' element={<About />} />
+          <Route path='/content' element={<Content />} />
           <Route path='*' element={<News />} />
           <Route />
         </Routes>
+        <Footer />
       </Provider>
     </HashRouter>
   </React.StrictMode>

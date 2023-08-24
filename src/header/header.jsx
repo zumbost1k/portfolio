@@ -7,6 +7,21 @@ import Cake from '@/icons/cake';
 import Calendar from '@/icons/calendar';
 
 
+const lifeStates = [
+    {
+        icon: Backpack,
+        text: 'Available'
+    },
+    {
+        icon: Cake,
+        text: 'November 16th'
+    },
+    {
+        icon: Calendar,
+        text: 'Joined Aug 2023'
+    },
+]
+
 const Header = () => {
     const [email, setEmail] = useState('');
 
@@ -31,9 +46,13 @@ const Header = () => {
                 <p className='text_about_me'>Brings ideas to life with code! ✨</p>
                 <p className='text_about_me'>Front-end developer. Third-year MCB student. Musician. </p>
                 <div className='info_with_icon_container'>
-                    <div className='info_with_icon'> <Backpack /><p> Available</p></div>
-                    <div className='info_with_icon'> <Cake /><p> November 16th</p></div>
-                    <div className='info_with_icon'> <Calendar /><p> Joined Aug 2023</p></div>
+                    {
+                        lifeStates.map(state => {
+                            return (
+                                <div key={state.text} className='info_with_icon'> <state.icon /><p> {state.text}</p></div>
+                            )
+                        })
+                    }
                 </div>
                 <div className='send_message_to_me'>
                     <p className='contact_me_here'>Keep up to date with my latest projects and adventures!</p>
