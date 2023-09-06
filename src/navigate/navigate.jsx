@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import './navigate.css'
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const navLinks = [
     {
@@ -19,9 +19,11 @@ const navLinks = [
         id: 'content'
     },]
 
-const Navigate = () => {
+const NavigateLinks = () => {
     const inputRefs = useRef([]);
-    const [labelCheked, setLabelChecked] = useState('news');
+    const location = useLocation();
+    const content = location.pathname.substring(1);
+    const [labelCheked, setLabelChecked] = useState(content);
     const handleClick = (index) => {
         inputRefs.current[index].click();
         setLabelChecked(index)
@@ -38,6 +40,7 @@ const Navigate = () => {
             })}
         </nav>
     )
+
 }
 
-export default Navigate
+export default NavigateLinks

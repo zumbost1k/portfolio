@@ -3,37 +3,21 @@ import './contentBody.css'
 import { useSelector } from 'react-redux';
 import { allProjectsList } from '@/store/selectors';
 import { Link } from 'react-router-dom';
-
-const tableInfo = [
+import Clock from '@/icons/clock';
+import Monitor from '@/icons/monitor';
+import Wrench from '@/icons/wrench';
+const projectIcons = [
     {
-        header: true,
-        text: '',
-        key: 'projectName'
-    },
-    {
-        header: false,
-        text: 'Project type',
-        key: 'type'
-    },
-    {
-        header: false,
-        text: 'Supported resolutions',
-        key: 'displayResolution'
-    },
-    {
-        header: false,
-        text: 'Tools used',
-        key: 'instruments'
-    },
-    {
-        header: false,
-        text: 'Development time',
+        icon: Clock,
         key: 'developmentPeriod'
     },
     {
-        header: false,
-        text: 'Project impressions',
-        key: 'personalFeedback'
+        icon: Monitor,
+        key: 'displayResolution'
+    },
+    {
+        icon: Wrench,
+        key: 'instruments'
     },
 ]
 
@@ -41,7 +25,31 @@ const Content = () => {
     const allProjects = useSelector(allProjectsList)
     return (
         <section className='content_section'>
-            <div>
+            {
+                allProjects.map(
+                    project => {
+                        return (
+                            <Link className='project' to={project.projectLink} key={project.projectId}>
+                                <img className='project_photo' width='400' height='250' src={`/contentPhotos/${project.projectPhotoPath}`} alt={project.projectName} />
+                                <div className='project_text_container'>
+                                    <h2 className='project_title'>{project.projectName}</h2>
+                                    <p className='project_goal'>{project.personalFeedback}</p>
+                                    <div className='project_icons'>{projectIcons.map(icon => {
+                                        return (
+                                            <div key={icon.key} className='project_icon'>
+                                                <icon.icon />
+                                                <p className='project_icon_text'>{project[icon.key]}</p>
+                                            </div>
+                                        )
+                                    })}
+                                    </div>
+                                </div>
+                            </Link>
+                        )
+                    }
+                )
+            }
+            {/* <div>
 
                 {
                     allProjects.map(currentProject => {
@@ -92,7 +100,7 @@ const Content = () => {
                     }
                     )
                 }
-            </div>
+            </div> */}
         </section>
     )
 }
