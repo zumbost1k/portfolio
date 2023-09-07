@@ -29,9 +29,35 @@
     padding-top: 15px;
 }
 
+.about_skill_header {
+    font-size: 22px;
+    font-weight: 600;
+    padding-top: 15px;
+}
+
+.about_skill_list_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_skill_list {
+    list-style-position: inside;
+}
+
+.about_skill_list_item {
+    border-left: 2px solid rgb(199, 199, 199);
+    padding-left: 10px;
+    font-size: 18px;
+    padding-top: 5px;
+}
+
 @media (min-width:724px) {
     .about_title {
         font-size: 30px;
+    }
+
+    .about_skill_header {
+        font-size: 25px;
     }
 
     .about_text {
