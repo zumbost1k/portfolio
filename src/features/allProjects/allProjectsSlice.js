@@ -42,7 +42,18 @@ const initialState = {
             instruments: 'Recursive component call, redux, asynchronous requests',
             developmentPeriod: '3 days',
             projectLink: 'https://stupendous-croissant-edadf1.netlify.app/',
-            personalFeedback: 'this project provides an opportunity to create an analog of a discussion with support for changing accounts, replying to comments and other interaction with them',
+            personalFeedback: 'This project provides an opportunity to create an analog of a discussion with support for changing accounts, replying to comments and other interaction with them',
+        },
+        {
+            projectId: v4(),
+            projectName: 'Comments section on Vue3',
+            projectPhotoPath: 'comments.png',
+            type: 'Comments section',
+            displayResolution: 'Project adapted',
+            instruments: 'Vue3, Recursive component call, vuex, asynchronous requests',
+            developmentPeriod: '2 days',
+            projectLink: 'https://64fed675d0af9f4f596bc627--endearing-trifle-c6fe2a.netlify.app/#/',
+            personalFeedback: 'This project was something new and unusual for me, as I was familiarizing myself with vue 3. it went well, it would be interesting to develop it further.',
         },
     ]
 }
