@@ -4,9 +4,9 @@ import { Link, useLocation } from 'react-router-dom';
 
 const navLinks = [
     {
-        labelText: 'My news',
-        path: '/news',
-        id: 'news'
+        labelText: 'Content',
+        path: '/content',
+        id: 'content'
     },
     {
         labelText: 'About',
@@ -14,9 +14,9 @@ const navLinks = [
         id: 'about'
     },
     {
-        labelText: 'Content',
-        path: '/content',
-        id: 'content'
+        labelText: 'My news',
+        path: '/news',
+        id: 'news'
     },]
 
 const NavigateLinks = () => {

@@ -24,7 +24,7 @@ root.render(
           <Route path='/news' element={<News />} />
           <Route path='/about' element={<About />} />
           <Route path='/content' element={<Content />} />
-          <Route path='*' element={<Navigate to='/news' replace />} />
+          <Route path='*' element={<Navigate to='/content' replace />} />
           <Route />
         </Routes>
         <Footer />
