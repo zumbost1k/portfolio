@@ -36,7 +36,7 @@ const Header = () => {
     }
     return (
         <header className='header_info'>
-            <img className='guitar_photo' src='/photos/guitar.jpeg' alt='guitar' width='724' height='125' />
+            <img className='guitar_photo' src='/photos/guitar.jpeg' alt='guitar' width='824' height='125' />
             <div className='info_about_myself'>
                 <div className='photos_container'>
                     <img className='my_photo' src='/photos/me.jpg' alt='me' width='86' height='86' />
@@ -44,7 +44,7 @@ const Header = () => {
                 </div>
                 <h3 className='my_name'>Mikhail Matusevich</h3>
                 <p className='text_about_me'>Brings ideas to life with code! ✨</p>
-                <p className='text_about_me'>Front-end developer. Third-year MCB student. Musician. </p>
+                <p className='text_about_me'>Front-end developer. Third-year MCB student. </p>
                 <div className='info_with_icon_container'>
                     {
                         lifeStates.map(state => {

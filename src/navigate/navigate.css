@@ -1,5 +1,5 @@
 .nav_links_container {
-    max-width: 724px;
+    max-width: 824px;
     padding-top: 30px;
     display: flex;
     justify-content: space-between;
@@ -30,7 +30,7 @@
 
 .nav_link_radio:checked+.nav_link_label {
     color: black;
-    border-bottom: 4px solid rgb(189, 5, 5);
+    border-bottom: 4px solid rgb(173, 139, 86);
     padding: 15px;
     padding-bottom: 11px;
 }
@@ -39,6 +39,7 @@
     .link_container {
         padding: 20px;
     }
+
     .nav_link_radio:checked+.nav_link_label {
         padding-bottom: 16px;
     }

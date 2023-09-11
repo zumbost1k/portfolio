@@ -32,10 +32,10 @@ const NavigateLinks = () => {
         <nav className='nav_links_container'>
             {navLinks.map(link => {
                 return (
-                    <div className='link_container'>
+                    <Link onClick={() => handleClick(link.id)} to={link.path} className='link_container'>
                         <input checked={link.id === labelCheked} ref={(element) => (inputRefs.current[link.id] = element)} className='nav_link_radio' type='radio' name='link_nav' id={link.id} />
-                        <label onClick={() => handleClick(link.id)} className='nav_link_label' htmlFor={link.id}><Link to={link.path}>{link.labelText}</Link></label>
-                    </div>
+                        <label className='nav_link_label' htmlFor={link.id}>{link.labelText}</label>
+                    </Link>
                 )
             })}
         </nav>
