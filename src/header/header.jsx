@@ -35,7 +35,7 @@ const Header = () => {
             <div className='info_about_myself'>
                 <div className='photos_container'>
                     <img className='my_photo' src='/photos/me.jpg' alt='me' width='86' height='86' />
-                    <Link to='https://www.instagram.com/misha_mch/?hl=ru'><button className='follow_inst_btn'>Follow <Instagramm /></button></Link>
+                    <Link to='https://www.instagram.com/misha_mch/?hl=ru' target="_blank"><button className='follow_inst_btn'><span>Follow</span> <Instagramm /></button></Link>
                 </div>
                 <h3 className='my_name'>Mikhail Matusevich</h3>
                 <p className='text_about_me'>Brings ideas to life with code! ✨</p>

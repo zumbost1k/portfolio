@@ -35,7 +35,7 @@ const Footer = () => {
             <div className='contact_icons'>
                 {contactIcons.map(currentIcon => {
                     return (
-                        <Link className='footer_link' key={currentIcon.text} to={currentIcon.path}><currentIcon.icon /></Link>
+                        <Link target="_blank" className='footer_link' key={currentIcon.text} to={currentIcon.path}><currentIcon.icon /></Link>
                     )
                 })}
             </div>
