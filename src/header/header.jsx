@@ -4,21 +4,16 @@ import Instagramm from '@/icons/instagram';
 import { Link } from 'react-router-dom';
 import Backpack from '@/icons/backpack';
 import Cake from '@/icons/cake';
-import Calendar from '@/icons/calendar';
 
 
 const lifeStates = [
     {
         icon: Backpack,
-        text: 'Available'
+        text: 'Open to work'
     },
     {
         icon: Cake,
         text: 'November 16th'
-    },
-    {
-        icon: Calendar,
-        text: 'Joined Aug 2023'
     },
 ]
 
@@ -36,7 +31,7 @@ const Header = () => {
     }
     return (
         <header className='header_info'>
-            <img className='guitar_photo' src='/photos/guitar.jpeg' alt='guitar' width='824' height='125' />
+            <img className='guitar_photo' src='/photos/heart.png' alt='heart' width='824' height='125' />
             <div className='info_about_myself'>
                 <div className='photos_container'>
                     <img className='my_photo' src='/photos/me.jpg' alt='me' width='86' height='86' />

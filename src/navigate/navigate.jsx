@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 const navLinks = [
     {
-        labelText: 'Content',
+        labelText: 'Portfolio',
         path: '/content',
         id: 'content'
     },
