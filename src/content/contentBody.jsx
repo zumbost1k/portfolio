@@ -29,7 +29,7 @@ const Content = () => {
                 allProjects.map(
                     project => {
                         return (
-                            <Link className='project' to={project.projectLink} key={project.projectId}>
+                            <Link target="_blank" className='project' to={project.projectLink} key={project.projectId}>
                                 <img className='project_photo' width='400' height='250' src={`/contentPhotos/${project.projectPhotoPath}`} alt={project.projectName} />
                                 <div className='project_text_container'>
                                     <h2 className='project_title'>{project.projectName}</h2>
