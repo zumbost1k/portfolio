@@ -52,7 +52,7 @@ const initialState = {
             displayResolution: 'Project adapted',
             instruments: 'Vue3, Recursive component call, vuex, asynchronous requests',
             developmentPeriod: '2 days',
-            projectLink: 'https://64fed675d0af9f4f596bc627--endearing-trifle-c6fe2a.netlify.app/#/',
+            projectLink: 'https://sage-rugelach-55a795.netlify.app/',
             personalFeedback: 'This project was something new and unusual for me, as I was familiarizing myself with vue 3. it went well, it would be interesting to develop it further.',
         },
     ]
