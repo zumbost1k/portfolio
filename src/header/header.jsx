@@ -31,7 +31,7 @@ const Header = () => {
     }
     return (
         <header className='header_info'>
-            <img className='guitar_photo' src='/photos/heart.png' alt='heart' width='824' height='125' />
+            <img className='guitar_photo' src='/photos/hello.png' alt='hello' width='824' height='125' />
             <div className='info_about_myself'>
                 <div className='photos_container'>
                     <img className='my_photo' src='/photos/me.jpg' alt='me' width='86' height='86' />

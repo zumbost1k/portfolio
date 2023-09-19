@@ -30,7 +30,7 @@
 
 .nav_link_radio:checked+.nav_link_label {
     color: black;
-    border-bottom: 4px solid rgb(220, 29, 29);
+    border-bottom: 4px solid rgb(137, 127, 127);
     padding: 15px;
     padding-bottom: 11px;
 }
