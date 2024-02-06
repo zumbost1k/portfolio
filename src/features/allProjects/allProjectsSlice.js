@@ -44,7 +44,7 @@ const initialState = {
       projectId: v4(),
       projectName: 'Furniro shop',
       projectPhotoPath: 'furniro.jpg',
-      displayResolution: '1440px',
+      displayResolution: 'Made for 1440px resolution',
       instruments: 'Sliders, redux, asynchronous requests',
       developmentPeriod: 'Month',
       projectLink: 'https://gleeful-cajeta-71f261.netlify.app/',
