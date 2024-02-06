@@ -17,8 +17,17 @@ const skillsQueue = [
 ];
 
 const skills = {
-  hard: ['Java Script', 'HTML', 'CSS', 'React', 'Redux', 'Vue 3', 'Git'],
-  dealWith: ['C++', 'Python', 'NodeJS', 'MongoDB', 'Figma'],
+  hard: [
+    'Java Script',
+    'React',
+    'Redux',
+    'Vue 3',
+    'Git',
+    'nodeJS',
+    'express',
+    'postgreSQL',
+  ],
+  dealWith: ['C++', 'Python', 'MongoDB', 'Figma'],
   soft: [
     'Communication skills',
     'Creative thinking',
