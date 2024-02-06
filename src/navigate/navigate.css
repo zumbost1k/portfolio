@@ -18,6 +18,7 @@
 }
 
 .nav_link_label {
+    white-space: nowrap;
     cursor: pointer;
     color: rgb(153, 150, 150);
     font-size: 18px;
