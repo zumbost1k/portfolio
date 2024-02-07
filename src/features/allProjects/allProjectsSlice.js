@@ -65,9 +65,9 @@ const initialState = {
     {
       projectId: v4(),
       projectPhotoPath: 'blog.png',
-      projectName: 'Nordic Rose',
-      displayResolution: 'Project adapted',
-      instruments: 'React, pagination, database operation',
+      projectName: 'Full stack Nordic Rose',
+      displayResolution: 'Project is adapted',
+      instruments: 'React, redux, firebase, postgreSQL, express',
       developmentPeriod: 'Month and a half',
       projectLink: 'https://amazing-halva-e39766.netlify.app/',
       personalFeedback:
