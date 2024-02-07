@@ -1,66 +1,74 @@
 .about_section {
-    max-width: 700px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin: 30px 20px 0px 20px;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 30px 20px 0px 20px;
 }
 
 .about_title {
-    font-size: 25px;
-    font-weight: 800;
-    letter-spacing: 0.3px;
+  font-size: 25px; 
+  font-weight: 800;
+  letter-spacing: 0.3px;
 }
 
 .about_text {
-    font-size: 16px;
-    padding-top: 15px;
+  font-size: 16px;
+  padding-top: 15px;
 }
 
 .about_figcaption {
-    text-align: center;
-    font-size: 16px;
-    padding-top: 5px;
-    color: grey;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 5px;
+  color: grey;
 }
 
 .about_img {
-    height: auto;
-    padding-top: 15px;
+  height: auto;
+  padding-top: 15px;
 }
 
 .about_skill_header {
-    font-size: 22px;
-    font-weight: 600;
-    padding-top: 15px;
+  font-size: 22px;
+  font-weight: 600;
+  padding-top: 15px;
+  margin-bottom: 5px;
 }
 
 .about_skill_list_container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .about_skill_list {
-    list-style-position: inside;
+  list-style-position: inside;
 }
 
 .about_skill_list_item {
-    border-left: 2px solid rgb(199, 199, 199);
-    padding-left: 10px;
-    font-size: 18px;
-    padding-top: 5px;
+  border-left: 2px solid rgb(199, 199, 199);
+  padding-left: 10px;
+  font-size: 18px;
+  padding-top: 5px;
 }
 
-@media (min-width:724px) {
-    .about_title {
-        font-size: 30px;
-    }
+@media (min-width: 724px) {
+  .about_title {
+    font-size: 30px;
+  }
 
-    .about_skill_header {
-        font-size: 25px;
-    }
+  .about_skill_header {
+    font-size: 25px;
+  }
 
-    .about_text {
-        font-size: 18px;
-    }
+  .about_text {
+    font-size: 18px;
+  }
+
+  .about_skill_list_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
