@@ -7,16 +7,16 @@ import Wrench from '@/icons/wrench';
 const projectIcons = [
   {
     icon: Clock,
-    key: 'developmentPeriod',
+    key: 'developmentPeriod'
   },
   {
     icon: Monitor,
-    key: 'displayResolution',
+    key: 'displayResolution'
   },
   {
     icon: Wrench,
-    key: 'instruments',
-  },
+    key: 'instruments'
+  }
 ];
 
 const Content = () => {
@@ -26,9 +26,8 @@ const Content = () => {
       'https://portfolio-server-production-93c0.up.railway.app/api/project/',
       { method: 'GET' }
     )
-      .then((responce) => responce.json())
-      .then((data) => {
-        console.log(data);
+      .then(responce => responce.json())
+      .then(data => {
         setAllProjects(data.reverse());
       });
   }, []);
@@ -37,31 +36,31 @@ const Content = () => {
     return;
   }
   return (
-    <section className='content_section'>
-      {allProjects.map((project) => {
+    <section className="content_section">
+      {allProjects.map(project => {
         return (
           <Link
-            target='_blank'
-            className='project'
+            target="_blank"
+            className="project"
             to={project.projectLink}
             key={project.projectId}
           >
             <img
-              className='project_photo'
-              width='400'
-              height='250'
+              className="project_photo"
+              width="400"
+              height="250"
               src={`https://portfolio-server-production-93c0.up.railway.app/${project.projectPhotoPath}`}
               alt={project.projectName}
             />
-            <div className='project_text_container'>
-              <h2 className='project_title'>{project.projectName}</h2>
-              <p className='project_goal'>{project.personalFeedback}</p>
-              <div className='project_icons'>
-                {projectIcons.map((icon) => {
+            <div className="project_text_container">
+              <h2 className="project_title">{project.projectName}</h2>
+              <p className="project_goal">{project.personalFeedback}</p>
+              <div className="project_icons">
+                {projectIcons.map(icon => {
                   return (
-                    <div key={icon.key} className='project_icon'>
+                    <div key={icon.key} className="project_icon">
                       <icon.icon />
-                      <p className='project_icon_text'>{project[icon.key]}</p>
+                      <p className="project_icon_text">{project[icon.key]}</p>
                     </div>
                   );
                 })}
