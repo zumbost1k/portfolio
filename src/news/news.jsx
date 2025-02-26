@@ -4,7 +4,7 @@ import './news.css';
 const News = () => {
   const [allNews, setAllNews] = useState([]);
   useEffect(() => {
-    fetch('https://portfolio-server-production-93c0.up.railway.app/api/news/', {
+    fetch('https://portfolio-server-sy1u.onrender.com/api/news/', {
       method: 'GET'
     })
       .then(response => response.json())
@@ -41,7 +41,7 @@ const News = () => {
                 width="600"
                 height="600"
                 className="news_photo"
-                src={`https://portfolio-server-production-93c0.up.railway.app/${news.newsPhotoPath}`}
+                src={`https://portfolio-server-sy1u.onrender.com/${news.newsPhotoPath}`}
                 alt={news.newsTitle}
               />
             </div>

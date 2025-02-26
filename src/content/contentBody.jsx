@@ -22,10 +22,9 @@ const projectIcons = [
 const Content = () => {
   const [allProjects, setAllProjects] = useState([]);
   useEffect(() => {
-    fetch(
-      'https://portfolio-server-production-93c0.up.railway.app/api/project/',
-      { method: 'GET' }
-    )
+    fetch('https://portfolio-server-sy1u.onrender.com/api/project/', {
+      method: 'GET'
+    })
       .then(responce => responce.json())
       .then(data => {
         setAllProjects(data.reverse());
@@ -49,7 +48,7 @@ const Content = () => {
               className="project_photo"
               width="400"
               height="250"
-              src={`https://portfolio-server-production-93c0.up.railway.app/${project.projectPhotoPath}`}
+              src={`https://portfolio-server-sy1u.onrender.com/${project.projectPhotoPath}`}
               alt={project.projectName}
             />
             <div className="project_text_container">

@@ -22,7 +22,7 @@ const Header = () => {
   const handleSubmit = e => {
     e.preventDefault();
     fetch(
-      'https://portfolio-server-production-93c0.up.railway.app/api/email/',
+      'https://portfolio-server-sy1u.onrender.com/api/email/',
 
       {
         method: 'POST',
