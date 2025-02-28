@@ -72,10 +72,12 @@ const About = () => {
         })}
       </div>
       <p className="about_text">
-        I want to continue to grow in development and try new languages. I am
-        also ready to relocate to Poland, preferably Lodz. In my previous jobs I
-        was also involved in training and managing newcomers in the team, which
-        I would be happy to do in the future as well.{' '}
+        I want to keep developing and trying new languages. I am also ready to
+        move to Poland, preferably to Lodz. In my previous jobs I acted as a
+        full stack developer. There I mainly worked with vue3 and nestJs. Also I
+        have significant experience in frontend development using Vue3 and
+        React. I have also been involved in training newbies in the team, which
+        I am happy to help with in future teams as well.
       </p>
       <img
         className="about_img"
@@ -90,10 +92,11 @@ const About = () => {
       <h3 className="about_skill_header">About me:</h3>
       <p className="about_text">
         I am currently developing my skills in FullStack development and team
-        management. I continue learning Polish and English. I have experience
-        with building complex mathematical algorithms in development, developing
-        automated tests, documentation and scripting. I am open to relocation
-        and have all the necessary documents to live and work in Poland.
+        management. I continue to learn Polish and English languages. I have
+        experience in building complex mathematical algorithms in development,
+        developing automated tests with Jest tool, documenting and scripting
+        with nestCommander, ZX and bun. I am open to relocation and have all
+        necessary documents to live and work in Poland.
       </p>
       <h3 className="about_skill_header">My hobbies: </h3>
       <ul className="about_skill_list">
